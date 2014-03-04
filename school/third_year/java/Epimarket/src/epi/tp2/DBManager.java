@@ -72,7 +72,7 @@ public class DBManager {
  			//ex d'URL permettant le connection distante: "jdbc:JDataConnect://www.domain.com/db-dsn"; 
  			
  			//3eme etape: Creation de l'object de connection
-			myConnect 				= DriverManager.getConnection(strConnectURL, "root", "270489");//login & password
+			myConnect 				= DriverManager.getConnection(strConnectURL, "root", "pass");//login & password
 		
 			//Option: Acces a un jeu de meta information sur la base avec laquelle on dialogue.
 			myDbMetaData 			= myConnect.getMetaData();
