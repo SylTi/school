@@ -1,0 +1,273 @@
+body{
+	background: #777;
+}
+
+#body_login{
+	width: 249px;
+	height: 10px;
+	border: 0px solid #000;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.coin_hg{
+	width: 20px;
+	height: 15px;
+	background:url(../images/coin_hg.gif) no-repeat;
+	float: left;
+}
+
+.coin_hc{
+	width: 209px;
+	height: 15px;
+	background:url(../images/coin_hc.gif) repeat-x;
+	float: left;
+}
+
+.coin_hd{
+	width: 20px;
+	height: 15px;
+	background:url(../images/coin_hd.gif) no-repeat;
+	float: left;
+}
+
+.coin_bg{
+	width: 20px;
+	height: 15px;
+	background:url(../images/coin_bg.gif) no-repeat;
+	float: left;
+}
+
+.coin_bc{
+	width: 209px;
+	height: 15px;
+	text-align: center;
+	background:url(../images/coin_bc.gif) repeat-x;
+	float: left;
+}
+
+.coin_bd{
+	width: 20px;
+	height: 15px;
+	background:url(../images/coin_bd.gif) no-repeat;
+	float: left;
+}
+
+.body_admin{
+	width: 248px;
+	background:url(../images/body_admin.gif) repeat-y;
+}
+
+.logo_admin{
+	text-align: center;
+}
+
+.identifiant_admin{
+	border: 0px solid #000;
+	width: 211px;
+	margin: auto;
+	margin-top: 5px;
+}
+
+.titre_admin{
+	width: 40%;
+	text-align: right;
+	font-family: Arial;
+	color: #777;
+	font-size: 10px;
+	float: left;
+	padding-top: 3px;
+}
+
+.case_admin{
+	width: 45%;
+	margin-left: 10px;
+	text-align: left;
+	font-family: Arial;
+	color: #777;
+	font-size: 10px;
+	float: left;
+	padding-top: 3px;
+}
+
+.input_{
+	font-size: 10px;
+	font-family: Arial;
+	color: #000;
+	background: url(../images/fond_input.gif) no-repeat;
+	width: 90px;
+	padding: 0px 5px;
+	height: 12px;
+	border: 1px solid #777;
+}
+
+#bouton_login{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.reset{
+	margin: 0px 10px;
+	background: url(../images/bouton_reset.gif) no-repeat;
+}
+
+.submit{
+	margin: 0px 10px;
+	background: url(../images/bouton_submit.gif) no-repeat;
+}
+
+#explain_error{
+	display: none;
+	margin: 0 10px;
+	font-family: Arial;
+	color: #777;
+	font-size: 10px;
+	text-align: center;
+}
+
+#admin_body{
+	width: 800px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.centre_admin{
+	width: 796px;
+	background:url(../images/centre_admin.gif) repeat-y;
+}
+
+#menu_admin{
+	width: 170px;
+	margin-left: 30px;
+	float: left;
+}
+
+.cell_admin{
+	width: 170px;
+	height: 20px;
+	background: url(../images/cell_admin.gif) no-repeat;
+	color: #777;
+	font-family: Arial;
+	font-size: 10px;
+	padding: 3px 0 0 10px;
+	cursor: default;
+}
+
+.under_cell{
+	border: 1px solid #DFDFDF;
+	width: 155px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	color: #777;
+	font-family: Arial;
+	font-size: 10px;
+	display: none;
+}
+
+#content{
+	border: 1px solid #DFDFDF;
+	width: 500px;
+	float: left;
+	margin-left: 15px;
+	padding: 5px;
+	height: 350px;
+	overflow: auto;
+}
+
+.border_logo{
+	border: 1px solid #DFDFDF;
+	width: 300px;
+}
+
+.hd{
+	width: 20px;
+	height: 15px;
+	background: url(../images/pages/arrondi/hd.gif) no-repeat;
+}
+
+.hg{
+	width: 20px;
+	height: 15px;
+	background: url(../images/pages/arrondi/hg.gif) no-repeat;
+}
+
+.hc{
+	height: 15px;
+	background: url(../images/pages/arrondi/hc.gif) repeat-x;
+}
+
+.bd{
+	width: 20px;
+	height: 15px;
+	background: url(../images/pages/arrondi/bd.gif) no-repeat;
+}
+
+.bg{
+	width: 20px;
+	height: 15px;
+	background: url(../images/pages/arrondi/bg.gif) no-repeat;
+}
+
+.bc{
+	height: 15px;
+	background: url(../images/pages/arrondi/bc.gif) repeat-x;
+}
+
+.cd{
+	width: 20px;
+	height: 15px;
+	background: url(../images/pages/arrondi/cd.gif) repeat-y;
+}
+
+.cg{
+	width: 20px;
+	height: 15px;
+	background: url(../images/pages/arrondi/cg.gif) repeat-y;
+}
+
+.cc{
+	background: #eeeeee;
+	color: #777777;
+	font-family: Arial;
+	font-size: 10px;
+}
+
+.case_stats{
+	border: 1px solid #DFDFDF;
+}
+
+.shadow{
+	height: 360px;
+	width: 510px;
+	margin: -5px;
+	position: absolute;
+	background:#000000;
+	-moz-opacity:0.7;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+	display: none;
+}
+
+.inner_shadow{
+	width: 300px;
+	background:#fff;
+	border: 1px solid #000;
+	position: absolute;
+	display: none;
+	margin: 50px 115px;
+	text-align: center;
+	padding: 10px;
+}
+
+.select_{
+	font-family: Arial;
+	font-size: 10px;
+	color: #000;
+	background: url(../images/fond_input.gif) no-repeat;
+	width: 102px;
+	padding: 0px 0px 0px 5px;
+	border: 1px solid #777;
+	height: 15px;
+}

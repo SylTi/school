@@ -1,0 +1,155 @@
+8
+
+dir
+1311
+http://vennys.ath.cx/svn/vennys
+http://vennys.ath.cx/svn/vennys
+
+
+
+2009-07-01T01:23:18.487668Z
+1311
+vennys
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+10157416-d07d-481c-a6d8-19a52c7d1f78
+
+lang.inc.php
+file
+
+
+
+
+2009-07-01T09:50:05.000000Z
+ecfaa3dc5671ed5be426935e7cae1538
+2009-06-30T21:08:54.006666Z
+1219
+vennys
+
+index2.php
+file
+
+
+
+
+2009-07-01T09:50:07.000000Z
+7777b8691645e2eecb85688411a96cde
+2009-06-29T14:22:30.906754Z
+1162
+vennys
+
+securimage
+dir
+
+css
+dir
+
+admin
+dir
+
+Cahier_des_charges_-PFA-_200900628_-_v1.1.docx
+file
+
+
+
+
+2009-07-01T09:50:07.000000Z
+4f95105630ffaa3625e1232a3322000d
+2009-06-28T22:15:41.930921Z
+1138
+vennys
+has-props
+
+index.php
+file
+
+
+
+
+2009-07-01T09:50:07.000000Z
+5cd0fe74486f859ddfdab9be97b7e6bb
+2009-06-30T21:27:10.700383Z
+1228
+vennys
+
+Cahier_des_charges_-PFA-_20090305_-_v1.0doc.doc
+file
+
+
+
+
+2009-06-16T12:40:25.000000Z
+7709995c1c5099bb6be1df9762971a57
+2009-05-04T19:01:39.703746Z
+5
+vennys
+has-props
+
+config.inc.php
+file
+
+
+
+
+2009-07-01T09:50:07.000000Z
+371e172e042f31175d7049dfd5707c8c
+2009-06-30T18:07:44.875751Z
+1197
+vennys
+
+script
+dir
+
+images
+dir
+
+class
+dir
+
+install
+dir
+
+modules
+dir
+
+decoupe.psd
+file
+
+
+
+
+2009-06-16T12:40:25.000000Z
+2b559eb0adbfd7442978118f1e4b549b
+2009-05-04T19:01:43.386070Z
+7
+vennys
+has-props
+
+js
+dir
+
+admin.php
+file
+
+
+
+
+2009-06-26T12:50:24.000000Z
+c4e1779e9ca3727061ed2edec1ac8b5c
+2009-06-25T14:31:06.700897Z
+1084
+vennys
+has-props
+

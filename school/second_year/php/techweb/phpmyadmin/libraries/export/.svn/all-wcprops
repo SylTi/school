@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export
+END
+pdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/pdf.php
+END
+csv.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/csv.php
+END
+latex.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/latex.php
+END
+sql.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/sql.php
+END
+excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/excel.php
+END
+htmlword.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/htmlword.php
+END
+xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/xml.php
+END
+htmlexcel.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/htmlexcel.php
+END
+ods.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/ods.php
+END
+odt.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/odt.php
+END
+xls.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/export/xls.php
+END

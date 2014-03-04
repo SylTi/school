@@ -1,0 +1,7 @@
+RewriteEngine on
+
+
+RewriteRule ^doc$ index.php?view=doc [L]
+RewriteRule ^profil$ index.php?view=profil [L]
+RewriteRule ^projets$ index.php?view=projets [L]
+

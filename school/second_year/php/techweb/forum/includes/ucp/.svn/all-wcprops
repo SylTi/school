@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/psynes/!svn/ver/1/forum/includes/ucp
+END
+ucp_register.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_register.php
+END
+ucp_main.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_main.php
+END
+ucp_pm_options.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_pm_options.php
+END
+ucp_confirm.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_confirm.php
+END
+ucp_profile.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_profile.php
+END
+ucp_activate.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_activate.php
+END
+ucp_pm_compose.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_pm_compose.php
+END
+ucp_pm_viewfolder.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_pm_viewfolder.php
+END
+ucp_zebra.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_zebra.php
+END
+ucp_pm_viewmessage.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_pm_viewmessage.php
+END
+ucp_attachments.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_attachments.php
+END
+ucp_pm.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_pm.php
+END
+ucp_remind.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_remind.php
+END
+ucp_prefs.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_prefs.php
+END
+ucp_groups.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_groups.php
+END
+ucp_resend.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/psynes/!svn/ver/1/forum/includes/ucp/ucp_resend.php
+END

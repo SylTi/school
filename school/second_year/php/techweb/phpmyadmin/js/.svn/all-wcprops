@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/psynes/!svn/ver/8/phpmyadmin/js
+END
+keyhandler.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/psynes/!svn/ver/8/phpmyadmin/js/keyhandler.js
+END
+tbl_change.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/psynes/!svn/ver/8/phpmyadmin/js/tbl_change.js
+END
+functions.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/psynes/!svn/ver/8/phpmyadmin/js/functions.js
+END
+dom-drag.js
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/psynes/!svn/ver/8/phpmyadmin/js/dom-drag.js
+END
+tooltip.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/psynes/!svn/ver/8/phpmyadmin/js/tooltip.js
+END
+querywindow.js
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/psynes/!svn/ver/8/phpmyadmin/js/querywindow.js
+END
+indexes.js
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/psynes/!svn/ver/8/phpmyadmin/js/indexes.js
+END
+server_privileges.js
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/psynes/!svn/ver/8/phpmyadmin/js/server_privileges.js
+END
+user_password.js
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/psynes/!svn/ver/8/phpmyadmin/js/user_password.js
+END

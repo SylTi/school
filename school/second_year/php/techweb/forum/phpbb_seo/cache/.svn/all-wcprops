@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/psynes/!svn/ver/1/forum/phpbb_seo/cache
+END
+phpbb_cache.php.old
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/psynes/!svn/ver/1/forum/phpbb_seo/cache/phpbb_cache.php.old
+END
+phpbb_cache.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/psynes/!svn/ver/1/forum/phpbb_seo/cache/phpbb_cache.php
+END
+phpbb_cache.php.current
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/psynes/!svn/ver/1/forum/phpbb_seo/cache/phpbb_cache.php.current
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/psynes/!svn/ver/1/forum/phpbb_seo/cache/.htaccess
+END
+.htaccess.current
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/psynes/!svn/ver/1/forum/phpbb_seo/cache/.htaccess.current
+END

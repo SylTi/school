@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/auth
+END
+config.auth.lib.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/auth/config.auth.lib.php
+END
+cookie.auth.lib.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/auth/cookie.auth.lib.php
+END
+http.auth.lib.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/psynes/!svn/ver/8/phpmyadmin/libraries/auth/http.auth.lib.php
+END

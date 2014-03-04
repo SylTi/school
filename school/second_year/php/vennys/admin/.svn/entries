@@ -1,0 +1,83 @@
+8
+
+dir
+1311
+http://vennys.ath.cx/svn/vennys/admin
+http://vennys.ath.cx/svn/vennys
+
+
+
+2009-06-30T22:29:05.101048Z
+1248
+vennys
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+10157416-d07d-481c-a6d8-19a52c7d1f78
+
+fonctions
+dir
+
+images
+dir
+
+includes
+dir
+
+css
+dir
+
+fckeditor
+dir
+
+js
+dir
+
+admin.psd
+file
+
+
+
+
+2009-06-16T12:40:23.000000Z
+1b7f8d033db486e8207aaba9387b6ab7
+2009-06-07T14:29:51.895778Z
+652
+vennys
+has-props
+
+index.php
+file
+
+
+
+
+2009-06-16T12:40:23.000000Z
+01f868b5243e015c927f031b8c6f4a46
+2009-06-07T14:29:51.895778Z
+652
+vennys
+
+admin.php
+file
+
+
+
+
+2009-06-16T12:40:23.000000Z
+d52fdc3f82733d1843b962a723c1ce66
+2009-06-07T15:29:09.292023Z
+685
+vennys
+

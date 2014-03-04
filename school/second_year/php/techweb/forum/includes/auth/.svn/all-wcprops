@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/psynes/!svn/ver/1/forum/includes/auth
+END
+auth_ldap.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/psynes/!svn/ver/1/forum/includes/auth/auth_ldap.php
+END
+auth_apache.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/psynes/!svn/ver/1/forum/includes/auth/auth_apache.php
+END
+auth_db.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/psynes/!svn/ver/1/forum/includes/auth/auth_db.php
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/psynes/!svn/ver/1/forum/includes/auth/index.htm
+END

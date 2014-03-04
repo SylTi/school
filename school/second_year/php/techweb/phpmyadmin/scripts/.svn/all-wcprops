@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts
+END
+create_tables_mysql_4_1_2+.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/create_tables_mysql_4_1_2+.sql
+END
+lang-cleanup.sh
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/lang-cleanup.sh
+END
+upgrade.pl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/upgrade.pl
+END
+remove_control_m.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/remove_control_m.sh
+END
+find_unused_messages.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/find_unused_messages.sh
+END
+upgrade_tables_mysql_4_1_2+.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/upgrade_tables_mysql_4_1_2+.sql
+END
+check_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/check_lang.php
+END
+decode_bug.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/decode_bug.php
+END
+setup.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/setup.php
+END
+convertcfg.pl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/convertcfg.pl
+END
+create-release.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/create-release.sh
+END
+create_tables.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/psynes/!svn/ver/8/phpmyadmin/scripts/create_tables.sql
+END

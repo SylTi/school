@@ -1,0 +1,36 @@
+CREATE TABLE `vennys`.`users_tracker` (
+`user_id` INT NOT NULL AUTO_INCREMENT ,
+`user_login` VARCHAR( 255 ) NOT NULL ,
+`user_pass` VARCHAR( 255 ) NOT NULL ,
+`user_mail` VARCHAR( 255 ) NOT NULL ,
+`user_client` VARCHAR( 255 ) ,
+`user_location` VARCHAR( 255 ) ,
+`user_group` INT NOT NULL ,
+`user_lang` INT NOT NULL ,
+`user_codeactiv` VARCHAR( 255 ) ,
+PRIMARY KEY ( `user_id` )
+) ENGINE = MYISAM ;
+
+CREATE TABLE `vennys`.`torrent_tracker` (
+`torrent_id` INT NOT NULL AUTO_INCREMENT
+ ,
+`torrent_name` VARCHAR( 255 ) NOT NULL ,
+`torrent _categorie` INT NOT NULL ,
+`torrent_posteur` VARCHAR( 255 ) NOT NULL ,
+`torrent_taille` FLOAT NOT NULL ,
+`torrent_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+`torrent_refxbtt` INT NOT NULL ,
+PRIMARY KEY ( `torrent_id` )
+) ENGINE = MYISAM ;
+
+
+//DB priv_msg (envoie de mp entre membres).
+/*
+  id int(4) auto_increment
+  id_from int(5) NULL
+  id_to int(5) NULL
+  is_read int(1) NULL
+  date datetime NULL
+  txt
+  titre
+*/

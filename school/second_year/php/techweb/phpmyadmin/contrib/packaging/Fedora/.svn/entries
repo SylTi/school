@@ -1,0 +1,52 @@
+8
+
+dir
+339
+http://psynes.ath.cx/svn/psynes/phpmyadmin/contrib/packaging/Fedora
+http://psynes.ath.cx/svn/psynes
+
+
+
+2009-03-11T17:45:51.336173Z
+8
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b1b4f84c-5c24-42ff-8bf2-238128d0c482
+
+phpMyAdmin.spec
+file
+
+
+
+
+2009-03-26T12:43:01.000000Z
+46c5d96be93ca183b8b6ca4fd91ede0a
+2009-03-11T17:45:51.336173Z
+8
+svn
+
+phpMyAdmin-http.conf
+file
+
+
+
+
+2009-03-26T12:43:01.000000Z
+13283ae2b42b017ff36121e534e4605a
+2009-03-11T17:45:51.336173Z
+8
+svn
+

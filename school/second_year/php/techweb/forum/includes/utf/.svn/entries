@@ -1,0 +1,55 @@
+8
+
+dir
+339
+http://psynes.ath.cx/svn/psynes/forum/includes/utf
+http://psynes.ath.cx/svn/psynes
+
+
+
+2009-03-11T17:44:04.603919Z
+1
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b1b4f84c-5c24-42ff-8bf2-238128d0c482
+
+utf_tools.php
+file
+
+
+
+
+2009-03-26T12:42:27.000000Z
+df3640802ef1ddae39ffbf79f68b55c4
+2009-03-11T17:44:04.603919Z
+1
+svn
+
+utf_normalizer.php
+file
+
+
+
+
+2009-03-26T12:42:27.000000Z
+10991d5aee0cc587cfbcd8a2818a5f24
+2009-03-11T17:44:04.603919Z
+1
+svn
+
+data
+dir
+

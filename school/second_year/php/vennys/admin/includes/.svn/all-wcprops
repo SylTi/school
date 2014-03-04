@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/vennys/!svn/ver/1248/admin/includes
+END
+include_menu_site.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vennys/!svn/ver/1024/admin/includes/include_menu_site.php
+END
+include_del_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vennys/!svn/ver/661/admin/includes/include_del_menu.php
+END
+include_news_edit_titre.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/vennys/!svn/ver/652/admin/includes/include_news_edit_titre.php
+END
+include_modif_user.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vennys/!svn/ver/1248/admin/includes/include_modif_user.php
+END
+delete_user.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vennys/!svn/ver/1236/admin/includes/delete_user.php
+END
+include_connection.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vennys/!svn/ver/652/admin/includes/include_connection.php
+END
+include_del_news.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vennys/!svn/ver/652/admin/includes/include_del_news.php
+END
+include_add_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vennys/!svn/ver/652/admin/includes/include_add_admin.php
+END
+include_statistiques.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vennys/!svn/ver/652/admin/includes/include_statistiques.php
+END
+include_modif_compte.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vennys/!svn/ver/652/admin/includes/include_modif_compte.php
+END
+edit_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vennys/!svn/ver/1024/admin/includes/edit_menu.php
+END
+include_all.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vennys/!svn/ver/652/admin/includes/include_all.php
+END
+include_admin_users.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vennys/!svn/ver/1234/admin/includes/include_admin_users.php
+END
+include_verif.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vennys/!svn/ver/652/admin/includes/include_verif.php
+END
+include_del_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vennys/!svn/ver/652/admin/includes/include_del_admin.php
+END
+include_add_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vennys/!svn/ver/1024/admin/includes/include_add_menu.php
+END
+include_admin_faq.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vennys/!svn/ver/652/admin/includes/include_admin_faq.php
+END
+include_add_faq.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vennys/!svn/ver/652/admin/includes/include_add_faq.php
+END
+include_admin_deco.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vennys/!svn/ver/687/admin/includes/include_admin_deco.php
+END
+include_admin_comptes.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/vennys/!svn/ver/652/admin/includes/include_admin_comptes.php
+END
+include_admin_news.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vennys/!svn/ver/652/admin/includes/include_admin_news.php
+END

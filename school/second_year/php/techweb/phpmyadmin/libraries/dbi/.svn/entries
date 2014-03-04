@@ -1,0 +1,52 @@
+8
+
+dir
+339
+http://psynes.ath.cx/svn/psynes/phpmyadmin/libraries/dbi
+http://psynes.ath.cx/svn/psynes
+
+
+
+2009-03-11T17:45:51.336173Z
+8
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+b1b4f84c-5c24-42ff-8bf2-238128d0c482
+
+mysqli.dbi.lib.php
+file
+
+
+
+
+2009-03-26T12:43:26.000000Z
+05b0937a6881929b119ae49880c5d26c
+2009-03-11T17:45:51.336173Z
+8
+svn
+
+mysql.dbi.lib.php
+file
+
+
+
+
+2009-03-26T12:43:26.000000Z
+fef843a5244bf0e7f2b4323c294d14c4
+2009-03-11T17:45:51.336173Z
+8
+svn
+
