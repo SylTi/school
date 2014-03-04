@@ -1,0 +1,5 @@
+categorie.jsp
+panier.jsp
+profil.jsp
+contact.jsp
+search.jsp
