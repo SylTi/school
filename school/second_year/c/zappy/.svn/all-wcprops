@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/svn/zappy/!svn/ver/202/
+END
+delete_to_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/zappy/!svn/ver/180/delete_to_list.c
+END
+pose_ressource.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/zappy/!svn/ver/151/pose_ressource.c
+END
+serveur_init2.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/zappy/!svn/ver/202/serveur_init2.c
+END
+prend_ressource.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/zappy/!svn/ver/151/prend_ressource.c
+END
+serveur_add.c
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/zappy/!svn/ver/155/serveur_add.c
+END
+init.c
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/zappy/!svn/ver/183/init.c
+END
+inventaire.c
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/zappy/!svn/ver/151/inventaire.c
+END
+auteurs
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/zappy/!svn/ver/144/auteurs
+END
+serveur2.c
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/zappy/!svn/ver/198/serveur2.c
+END
+voir_norme.c
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/zappy/!svn/ver/163/voir_norme.c
+END
+unaction.c
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/zappy/!svn/ver/118/unaction.c
+END
+xfunctions1.c
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/zappy/!svn/ver/195/xfunctions1.c
+END
+insert_to_list2.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/zappy/!svn/ver/172/insert_to_list2.c
+END
+parsinator_plus.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/zappy/!svn/ver/181/parsinator_plus.c
+END
+expulse.c
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/zappy/!svn/ver/119/expulse.c
+END
+update_time_death_pos.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/zappy/!svn/ver/185/update_time_death_pos.c
+END
+incantation2.c
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/zappy/!svn/ver/201/incantation2.c
+END
+my_broadcast2.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/zappy/!svn/ver/151/my_broadcast2.c
+END
+builtins.c
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/zappy/!svn/ver/151/builtins.c
+END
+incantation3.c
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/zappy/!svn/ver/201/incantation3.c
+END
+expulse_direc.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/zappy/!svn/ver/119/expulse_direc.c
+END
+serveur.c
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/zappy/!svn/ver/200/serveur.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/zappy/!svn/ver/200/Makefile
+END
+avance.c
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/zappy/!svn/ver/151/avance.c
+END
+serveur.h
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/zappy/!svn/ver/201/serveur.h
+END
+insert_to_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/zappy/!svn/ver/185/insert_to_list.c
+END
+winner.c
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/zappy/!svn/ver/191/winner.c
+END
+gauche_droite.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/zappy/!svn/ver/116/gauche_droite.c
+END
+broadcast.c
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/zappy/!svn/ver/151/broadcast.c
+END
+builtins_gr2.c
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/zappy/!svn/ver/151/builtins_gr2.c
+END
+builtins_gr3.c
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/zappy/!svn/ver/155/builtins_gr3.c
+END
+builtin_voir.c
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/zappy/!svn/ver/158/builtin_voir.c
+END
+pose.c
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/zappy/!svn/ver/171/pose.c
+END
+incantation.c
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/zappy/!svn/ver/201/incantation.c
+END
+my_broadcast.c
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/zappy/!svn/ver/196/my_broadcast.c
+END
+parsinator_display.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/zappy/!svn/ver/181/parsinator_display.c
+END
+prend.c
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/zappy/!svn/ver/171/prend.c
+END
+voir_direct.c
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/zappy/!svn/ver/171/voir_direct.c
+END
+serveur_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/zappy/!svn/ver/188/serveur_init.c
+END
+test.c
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/zappy/!svn/ver/183/test.c
+END
+random.c
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/zappy/!svn/ver/15/random.c
+END
+builtins_gr.c
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/zappy/!svn/ver/155/builtins_gr.c
+END
+parsinator.c
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/zappy/!svn/ver/201/parsinator.c
+END
+push.h
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/zappy/!svn/ver/172/push.h
+END
+init2.c
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/zappy/!svn/ver/158/init2.c
+END
+init3.c
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/zappy/!svn/ver/158/init3.c
+END
+usual.c
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/zappy/!svn/ver/1/usual.c
+END

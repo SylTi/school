@@ -1,0 +1,275 @@
+/*
+** serveur.h for serveur.h in /u/all/cebovi_n/cu/rendu/c/zappy
+** 
+** Made by nikola cebovic
+** Login   <cebovi_n@epitech.net>
+** 
+** Started on  Mon May 11 15:02:02 2009 nikola cebovic
+** Last update Mon Jun 22 17:51:47 2009 nikola cebovic
+*/
+
+#ifndef SERVEUR_H_
+#define SERVEUR_H_
+
+#include <arpa/inet.h>
+#include <sys/types.h>
+#include <sys/times.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netdb.h>
+
+#include <getopt.h>
+#include <stdio.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#include <string.h>
+
+#include <errno.h>
+
+#include "push.h"
+
+#define MAX_FD	64
+
+#define DEF_LINEMATE    200
+#define DEF_DERAUMERE   100
+#define DEF_SIBUR       400
+#define DEF_THYSTAME    50
+#define DEF_PHIRAS      100
+#define DEF_MENDIANE    350
+#define DEF_FOOD	1000
+
+#define X_MIN		10
+#define X_MAX		100
+#define Y_MIN		10
+#define Y_MAX		100
+#define DELAY_MIN	1
+#define DELAY_MAX	1000
+
+#define	UP		1
+#define	LEFT		2
+#define	DOWN		3
+#define	RIGHT		4
+
+#define CLIENT_DEFAULT	2
+#define X_DEFAULT	50
+#define Y_DEFAULT	50
+#define DELAY_DEFAULT	100
+
+#define FD_SERVEUR	0
+#define FD_CLIENT	1
+#define FD_CLIENT_GRAPHIQUE	2
+#define FD_CLIENT_UNKNOWN	3
+#define FD_IS_EMPTY		4
+
+#define BUF_SEND	1024
+#define BUF_RECV	2048
+
+/* informations sur la team */
+
+typedef struct	team
+{
+  int		slot_team;		/* nombre de slot de team restant */
+  char		*NUM_CLIENT;		/* le chaine a renvoyer au client*/
+  char		*name_team;
+  int		nbr_max_lvl;
+}		t_team;
+
+/* liste des ressources par case */
+
+typedef struct  ressources
+{
+  /* Liste des pierres */
+  int   linemate;
+  int   deraumere;
+  int   sibur;
+  int   mendiane;
+  int   phiras;
+  int   thystame;
+
+  /* Liste de nourriture */
+  int   food;
+}               t_ressources;
+
+/* informations sur le joueur [socket] */
+
+typedef struct	fd
+{
+  int		x;
+  int		y;
+  int		sens;
+  int		lvl;
+  t_ressources	inventaire;
+  int		slot_team;
+  int		type;
+  void		(*f_read)();
+  void		(*f_write)();
+  t_team	*team;
+  char		buf_send[BUF_SEND];
+  char		buf_recv[BUF_RECV];
+}		t_fd;
+
+/* informations globables (map, joueurs, ...) */
+
+typedef struct	env
+{
+  int		x_world;
+  int		y_world;
+  int		delay;
+  int		port;
+  int		t;			/* unite de temps */
+  t_fd		fd[MAX_FD + 1];		/* informations sur les joueurs */
+  int		native_max_team;	/* nombre max de teams dans la cli */
+  int		nb_team;		/* nombre de team en cour de jeu */
+  char		**team_;
+  t_team	*team;			/* informations sur les teams */
+  t_ressources	**map;			/* La map */
+}		t_env;
+
+/* fonctions */
+
+void	client_read(t_env *env, int fd, t_list *list);
+void	client_write(t_env *env, int fd);
+void	serveur_read(t_env *env, int sock, t_list *list);
+void	display_env(t_env *env);
+void	display_syno();
+void	error();
+void	display_team(t_env *env);
+int	xgetprotobyname();
+int	client_name_check(t_env *env, int socket);
+
+void	update_time_death_pos(int fd, t_env *env, t_list *list);
+void	update_time_death_neg(int fd, t_env *env, t_list *list);
+
+void	prend_linemate(int fd, t_env *env);
+void	prend_deraumere(int fd, t_env *env);
+void	prend_sibur(int fd, t_env *env);
+void	prend_mendiane(int fd, t_env *env);
+void	prend_phiras(int fd, t_env *env);
+
+void	pose_linemate(int fd, t_env *env);
+void	pose_deraumere(int fd, t_env *env);
+void	pose_sibur(int fd, t_env *env);
+void	pose_mendiane(int fd, t_env *env);
+void	pose_phiras(int fd, t_env *env);
+
+void	init_env(t_env *env);
+void	serveur_init(t_env *env, t_list *list);
+void	init_pos(t_env *env, int socket);
+void	client_init(t_env *env, int socket, t_list *list);
+void	client_graphic(t_env *env, int fd);
+
+void	set_linemate(t_ressources **ressources, int l_x, int l_y, int team);
+void	set_deraumere(t_ressources **ressources, int l_x, int l_y, int team);
+void	set_thystame(t_ressources **ressources, int l_x, int l_y, int team);
+void	set_phiras(t_ressources **ressources, int l_x, int l_y, int team);
+void	set_mendiane(t_ressources **ressources, int l_x, int l_y, int team);
+void	set_sibur(t_ressources **ressources, int l_x, int l_y, int team);
+void	set_food(t_ressources **ressources, int l_x, int l_y, int team);
+
+int     my_random(int mod);
+
+int     xwrite(int fd, char *str, int length);
+int     xread(int fd, char *str, int length);
+void    my_putstr(int fd, char *str);
+
+int     xclose(int fd);
+
+int     xselect(int nfds, fd_set *readfds, fd_set *writefds,
+                fd_set *exceptfds, struct timeval *timeout);
+
+void    *xmalloc(int size);
+
+int		parsinator(char **argv, int argc, t_env *env);
+t_ressources	**init(int x, int y, int team);
+void		team(char *optarg, int optind, char **argv, t_env *env);
+void		delay_exec(char *optarg, int optind, char **argv, t_env *env);
+void		add_port(char *optarg, int optind, char **argv, t_env *env);
+void		y_world(char *optarg, int optind, char **argv, t_env *env);
+void		x_world(char *optarg, int optind, char **argv, t_env *env);
+void		client_max(char *optarg, int optind, char **argv, t_env *env);
+void		error();
+
+void		unaction(t_list *l, int fd);
+
+void		voir_up(int fd, t_env *env);
+void		voir_down(int fd, t_env *env);
+void		voir_left(int fd,  t_env *env);
+void		voir_right(int fd, t_env *env);
+void		display_voir(int x, int y, int fd, t_env *env);
+void		voir(int fd, char *arg, t_env *env, t_list *list);
+int		my_broadcast(int fd, t_env *env, int listener);
+
+void		put_in_list(int fd, char *cmd, t_list *s, t_env *env);
+void		insert_in_list(t_list *s, int fd, char *cmd, t_env *env);
+void		insert_in_list2(t_list *s, t_elem *new, struct timeval time, t_elem *tmp);
+
+/*delete_in_list*/
+void		pop_front(t_list *l);
+
+/* builtins.c*/
+void	serveur_exec(int fd, char *buf, t_env *env, t_list *list);
+void	avance(int fd, char *arg, t_env *env, t_list *list);
+void    droite(int fd, char *arg, t_env *env);
+void    gauche(int fd, char *arg, t_env *env);
+void	voir(int fd, char *arg, t_env *env, t_list *list);
+void	prend(int fd, char *arg, t_env *env, t_list *list);
+void	pose(int fd, char *arg, t_env *env, t_list *list);
+void	expulse(int fd, char *arg, t_env *env, t_list *list);
+void	expulse_up(t_env *env, int fd_p);
+void	expulse_down(t_env *env, int fd_p);
+void	expulse_right(t_env *env, int fd_p);
+void	expulse_left(t_env *env, int fd_p);
+void	broadcast(int fd, char *arg, t_env *env, t_list *list);
+void	incantation(int fd, char *arg, t_env *env, t_list *list);
+void	my_fork(int fd, char *arg, t_env *env, t_list *list);
+void	my_fork2(int fd, char *arg, t_env *env, t_list *list);
+void	inventaire(int fd, char *arg, t_env *env, t_list *list);
+void	my_death (int fd, char * arg, t_env *env, t_list *list);
+void	connect_nbr(int fd, char *arg, t_env *env, t_list *list);
+void	my_incantation(int fd, char *arg, t_env *env, t_list *list);
+void	leveling(t_env *env, int fd, int nb, int maxlvl);
+
+/*builtins_gr.c*/
+void	serveur_exec_gr(int fd, char *cmd, t_env *env);
+
+/*serveur_add.c*/
+void    serveur_manage(t_env *env, fd_set *fd_read,
+                       fd_set *fd_write, t_list *list);
+
+/*builtins_gr2.c*/
+void	send_to_all_graph(char *str, t_env *env);
+void	gr_pose2(int fd, t_env *env, int res);
+void	print_bct(t_env *env, char *buf, int fd);
+
+int	incant_4(t_env *env, int fd, int nb);
+int	incant_3(t_env *env, int fd, int nb);
+int	incant_2(t_env *env, int fd, int nb);
+int	incant_1(t_env *env, int fd, int nb);
+void	eject_pierre(int nb, char *ressource, t_env *env);
+void	incantation(int fd, char *arg, t_env *env, t_list *list);
+int	incant_7(t_env *env, int fd, int nb);
+int	incant_6(t_env *env, int fd, int nb);
+int	incant_5(t_env *env, int fd, int nb);
+
+void	voir_up_astek(int flag, t_env *env, int fd, int y, int x);
+void	voir_down_astek(int flag, t_env *env, int fd, int y, int x);
+void	voir_left_astek(int flag, t_env *env, int fd, int y, int x);
+void	voir_right_astek(int flag, t_env *env, int fd, int y, int x);
+
+void		init_list(t_list *s);
+int		check_list(int fd, t_list *s);
+int	check_time(t_list *s, char *cmd);
+void		*insert_by_order(t_list *s, struct timeval time);
+int	winner(t_env *env);
+
+/*serveur2loop.c*/
+void	exec_cmd(int fd, char *cmd, t_env *env, t_list *list);
+void	serveur_loop2(t_env *env, t_list *list, struct timeval *time);
+
+/*select*/
+int	select_init(t_env *env, fd_set *fd_read, fd_set *fd_write);
+
+#endif

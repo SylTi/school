@@ -1,0 +1,125 @@
+##
+## Makefile for makefile for 42sh in /u/epitech_2012/jaspar_y/public/52sh
+##
+## Made by maxime dumez
+## Login   <dumez_m@epitech.net>
+##
+## Started on  Sat May 31 14:13:39 2008 maxime dumez
+## Last update Fri Jun 13 15:39:35 2008 nicolas bonsall
+##
+
+NAME		=	42sh
+DEST		=	srcs/
+
+SRC		=	$(DEST)main.c			\
+			$(DEST)xmalloc.c		\
+			$(DEST)xread.c			\
+			$(DEST)xwrite.c			\
+			$(DEST)my_getenv2.c		\
+			$(DEST)my_getenv.c		\
+			$(DEST)trait_str.c		\
+			$(DEST)simple_exec.c		\
+			$(DEST)my_strlen2.c		\
+			$(DEST)my_prompt.c		\
+			$(DEST)my_putstr_env.c		\
+			$(DEST)my_read.c		\
+			$(DEST)trait_cmd.c		\
+			$(DEST)my_discribe.c		\
+			$(DEST)check_exec.c		\
+			$(DEST)my_recode.c		\
+			$(DEST)check_exit.c		\
+			$(DEST)exit_shell.c		\
+			$(DEST)check_env.c		\
+			$(DEST)env_shell.c		\
+			$(DEST)check_cd.c		\
+			$(DEST)all_cd.c			\
+			$(DEST)cd_shell.c		\
+			$(DEST)fct.c			\
+			$(DEST)cd_shell_tilde.c		\
+			$(DEST)check_setenv.c		\
+			$(DEST)verif_ref.c		\
+			$(DEST)add_to_env.c		\
+			$(DEST)change_env.c		\
+			$(DEST)setenv_shell.c		\
+			$(DEST)check_var_to_env.c	\
+			$(DEST)check_unsetenv.c		\
+			$(DEST)unsetenv_shell.c		\
+			$(DEST)my_rm_all_env.c		\
+			$(DEST)my_check_rm_env.c	\
+			$(DEST)check_env_var.c		\
+			$(DEST)rm_good_env.c		\
+			$(DEST)func.c			\
+			$(DEST)wordtab.c		\
+			$(DEST)pipe_gest.c		\
+			$(DEST)lib_list_cmd.c		\
+			$(DEST)my_exec_cmd.c		\
+			$(DEST)my_put_nbr.c		\
+			$(DEST)check_r_redir.c		\
+			$(DEST)lib_list_cmd_2.c		\
+			$(DEST)my_cd_min.c		\
+			$(DEST)my_access.c		\
+			$(DEST)l_redir.c		\
+			$(DEST)l_redir2.c		\
+			$(DEST)check_pipe.c		\
+			$(DEST)xopen.c			\
+			$(DEST)my_strerror.c		\
+			$(DEST)print_tab.c		\
+			$(DEST)xclose.c			\
+			$(DEST)get_next_line.c		\
+			$(DEST)my_strcat.c		\
+			$(DEST)exec_prog.c		\
+			$(DEST)trait_bin.c		\
+			$(DEST)check_echo.c		\
+			$(DEST)echo_shell.c		\
+			$(DEST)check_fichier.c		\
+			$(DEST)check_synt.c		\
+			$(DEST)get_conf.c		\
+			$(DEST)my_term.c		\
+			$(DEST)auto_complet.c		\
+			$(DEST)alias.c			\
+			$(DEST)pipe_gest_rescue.c	\
+			$(DEST)check_term_cap.c		\
+			$(DEST)prompt.c			\
+			$(DEST)echo.c			\
+			$(DEST)history.c		\
+
+
+CC_FreeBSD	=	gcc
+CC_solaris	=	/usr/sfw/bin/gcc
+CC_linux	=	gcc
+CC_		=	gcc
+CC		=	$(CC_${OSTYPE})
+
+LDFLAGS         =       -I./includes/ -L./includes/ -L -ltermcap -lcurses
+CFLAGS          =       -W -Wall -ansi -D${OSTYPE} -g3
+
+OBJ		=	$(SRC:.c=.o)
+
+RM		=	rm -f
+
+COLOR		=	\33[32m
+COLOR2		=	\33[31m
+DEFAULT		=	\33[m
+
+.PHONY		:	clean fclean re
+.c.o		:
+			$(CC) $(CFLAGS) $(LDFLAGS) -c $< -o $@
+all		:	$(NAME)
+
+$(NAME)		:	$(OBJ)
+			@printf "$(COLOR)\n\nStarting $(NAME)...\n$(DEFAULT)\n"
+			$(CC) -o $(NAME) $(OBJ) $(LDFLAGS)
+			@printf "$(COLOR2)\n\n$(NAME) online.\n$(DEFAULT)\n"
+
+clean		:
+			@printf "$(COLOR)\n\nCleaning ...\n$(DEFAULT)\n"
+			$(RM) ./$(DEST)*~
+			$(RM) ./$(DEST)\#*\#
+			$(RM) ./$(DEST)*.o
+
+fclean		:	clean
+			$(RM) $(NAME)
+			@printf "\n"
+
+re		:	fclean all
+

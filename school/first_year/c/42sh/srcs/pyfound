@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+# -*-coding: utf-8-*-
+
+import os,sys,glob
+
+def listdirectory2(path): 
+    fichier=[] 
+    for root, dirs, files in os.walk(path): 
+        for i in files: 
+            fichier.append(os.path.join(root, i)) 
+    return fichier
+
+def pyfound(str):
+    files = listdirectory2(".")
+    for file in files:
+        fopen = open(file, "r")
+        datas = fopen.readlines()
+        x = 0
+        for data in datas:
+            if data.count(str):
+                print " \033[4m\033[1m%s\033[0m was found in file \033[1m%s\033[0m line \033[36m%s\033[0m:" % (str, file, x + 1)
+            x += 1
+
+if (len(sys.argv) >= 2 ):
+    pyfound(sys.argv[1])

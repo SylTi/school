@@ -1,0 +1,196 @@
+/*
+** serveur.c for zappy in /u/all/ampe_e/cu/rendu/c/zappy/zappy_svn/zappy
+** 
+** Made by emilien ampe
+** Login   <ampe_e@epitech.net>
+** 
+** Started on  Tue Jun 16 10:54:05 2009 emilien ampe
+<<<<<<< .mine
+<<<<<<< .mine
+** Last update Mon Jun 22 15:13:22 2009 sylvain tissier
+=======
+** Last update Sun Jun 21 18:11:28 2009 yoann jaspar
+>>>>>>> .r161
+=======
+** Last update Mon Jun 22 14:54:11 2009 virgile bizet
+>>>>>>> .r176
+*/
+
+#include "serveur.h"
+#include "push.h"
+
+int	select_init(t_env *env, fd_set *fd_read, fd_set *fd_write)
+{
+  int	i;
+  int	fd_max;
+
+  FD_ZERO(fd_read);
+  FD_ZERO(fd_write);
+  fd_max = 0;
+  i = 0;
+  while (i < MAX_FD)
+    {
+      if (env->fd[i].type == FD_SERVEUR || env->fd[i].type == FD_CLIENT||
+	  env->fd[i].type == FD_CLIENT_GRAPHIQUE ||
+	  env->fd[i].type == FD_CLIENT_UNKNOWN)
+	{
+	  FD_SET(i, fd_read);
+	  fd_max = i;
+	  if ((strlen(env->fd[i].buf_send)) > 0)
+	    FD_SET(i, fd_write);
+	}
+      i++;
+    }
+  return (fd_max);
+}
+/*
+struct timeval	*select_time(t_env *env, t_list *list)
+{
+  struct timeval timetmp;
+  struct timeval *time;
+
+  time = NULL;
+  time = xmalloc(sizeof(struct timeval));
+  if (list->first && list->first->cmd)
+    {
+      gettimeofday(&timetmp, NULL);
+      timersub(&list->first->time, &timetmp, &timetmp);
+      time = &timetmp;
+      if (time->tv_usec < 0 || time->tv_sec < 0)
+	{
+	  serveur_exec(list->first->fd, list->first->cmd, env, list);
+	  serveur_exec_gr(list->first->fd, list->first->cmd, env);
+	  pop_front(list);
+	  gettimeofday(&timetmp, NULL);
+	  timersub(&list->first->time, &timetmp, &timetmp);
+	  time = &timetmp;
+	}
+    }
+  else
+    time = NULL;
+  return (time);
+  }*/
+
+void	serveur_loop(t_env *env, t_list *list)
+{
+  int	fd_select, max_fd;
+  fd_set	fd_read;
+  fd_set	fd_write;
+  struct timeval *time;
+  struct timeval timetmp;
+
+  time = NULL;
+  time = xmalloc(sizeof(struct timeval));
+  while (1 && (winner(env) == 0))
+    {
+      max_fd = select_init(env, &fd_read, &fd_write);
+      if (list->first && list->first->cmd)
+	{
+	  gettimeofday(&timetmp, NULL);
+	  timersub(&list->first->time, &timetmp, &timetmp);
+	  time = &timetmp;
+	  if (time->tv_usec < 0 || time->tv_sec < 0)
+	    {
+	      serveur_exec(list->first->fd, list->first->cmd, env, list);
+	      serveur_exec_gr(list->first->fd, list->first->cmd, env);
+	      pop_front(list);
+	      gettimeofday(&timetmp, NULL);
+	      timersub(&list->first->time, &timetmp, &timetmp);
+	      time = &timetmp;
+	    }
+	}
+      else
+	time = NULL;
+      if (time == NULL || (time->tv_usec >= 0 && time->tv_sec >= 0))
+	{
+	  if ((fd_select = select(max_fd + 1, &fd_read,
+				  &fd_write, NULL, time)) == -1)
+	    {
+	      perror("Error on select()");
+	      exit(errno);
+	    }
+	  serveur_manage(env, &fd_read, &fd_write, list);
+	  if (fd_select == 0)
+	    {
+	      serveur_exec(list->first->fd, list->first->cmd, env, list);
+	      serveur_exec_gr(list->first->fd, list->first->cmd, env);
+	      pop_front(list);
+	    }
+	}
+    }
+}
+
+int	client_name_check(t_env *env, int socket)
+{
+  int	cc;
+  int	i;
+  char	*team_incoming;
+  int	len_name_team;
+
+  team_incoming = xmalloc(sizeof (team_incoming) * 1024);
+  bzero(team_incoming, 1023);
+  cc = xread(socket, team_incoming, 1024);
+  len_name_team = strlen(team_incoming);
+  i = 0;
+  team_incoming[len_name_team] = '\0';
+  if ((strncmp(team_incoming, "GRAPHIC\n", 8)) == 0)
+    {
+      free(team_incoming);
+      return (-2);
+    }
+  while (i < env->nb_team)
+    {
+      if ((strncmp(team_incoming, env->team_[i], (len_name_team -1))) == 0)
+	{
+	  free(team_incoming);
+	  return (i);
+	}
+      i++;
+    }
+  free(team_incoming);
+  return (-1);
+}
+
+void	serveur_read(t_env *env, int sock, t_list *list)
+{
+  int	res, i;
+  struct sockaddr_in    client_sin;
+  unsigned int          client_sin_len;
+
+  client_sin_len = sizeof(client_sin);
+  i = 0;
+  while (i < MAX_FD)
+    i++;
+  if ((res = accept(sock, (struct sockaddr *)&client_sin,
+                    &client_sin_len)) < 0)
+    {
+      perror("Error on accept()");
+      exit(0);
+    }
+  if (res > (MAX_FD - 1))
+    {
+      shutdown(res, 2);
+      perror("Plus de sockets disponnible pour se connecter, relancez le serveur\n");
+    }
+  else
+    {
+      i = 0;
+      while (i < MAX_FD)
+	i++;
+      client_init(env, res, list);
+    }
+}
+
+int	main(int ac, char **av)
+{
+  t_env		env;
+  t_list	list;
+
+  init_list(&list);
+  if (!parsinator(av, ac, &env))
+    exit(EXIT_FAILURE);
+  init_env(&env);
+  serveur_init(&env, &list);
+  serveur_loop(&env, &list);
+  return EXIT_SUCCESS;
+}

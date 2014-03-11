@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/zappy/!svn/ver/159/client_ia
+END
+define.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/zappy/!svn/ver/1/client_ia/define.php
+END
+manage_broadcast.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/zappy/!svn/ver/1/client_ia/manage_broadcast.php
+END
+zappy_ia.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/zappy/!svn/ver/159/client_ia/zappy_ia.php
+END
+ia_loop.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/zappy/!svn/ver/148/client_ia/ia_loop.php
+END
+basic_cmd.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/zappy/!svn/ver/1/client_ia/basic_cmd.php
+END
+manage_incant.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/zappy/!svn/ver/1/client_ia/manage_incant.php
+END
+manage_inventory.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/zappy/!svn/ver/1/client_ia/manage_inventory.php
+END
+search.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/zappy/!svn/ver/64/client_ia/search.php
+END

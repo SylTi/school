@@ -1,0 +1,14 @@
+[1
+#Makefile#
+42sh
+42sh.conf
+Makefile
+Makefile~
+builtins
+get_prompt
+histo.hst
+includes
+norme.py
+srcs
+toto
+toto.txt
